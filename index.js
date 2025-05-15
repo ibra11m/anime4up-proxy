@@ -5,6 +5,7 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 
+// هذا المسار يخلي UptimeRobot يصحي السيرفر
 app.get("/wake", (req, res) => {
   res.send("🟢 Proxy is awake!");
 });
